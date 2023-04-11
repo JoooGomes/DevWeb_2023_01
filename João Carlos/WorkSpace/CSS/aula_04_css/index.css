@@ -1,0 +1,24 @@
+*{
+    background-color: white;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1rem;
+    color: #bdb8ad;
+    text-shadow: 4px 4px 3px;
+}
+section{
+    border: 1px solid;
+    text-align: center;
+}
+.color0{
+    color: #e45858;
+    background-color: #ebe7e0;
+}
+.color1{
+    color:  #c6d4e1;
+    background-color: #ebe7e0;
+}
+
+.color2{
+    color: #44749d;
+    background-color: #e45858 ;
+}
