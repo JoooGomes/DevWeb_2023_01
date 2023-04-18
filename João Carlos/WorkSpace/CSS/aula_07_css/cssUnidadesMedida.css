@@ -58,11 +58,11 @@ img {
 }
 
 #parte_02 {
-    background-color: #d9d5bb
-    height: 100vh;
     text-align: center;
+    height: 100vh;
     padding: 0 20px;
     position: sticky;
+    background-color: #fcd7ff
 }
 
 #parte_02 h1 {
@@ -71,9 +71,11 @@ img {
 }
 
 #parte_02 p {
-    border: solid 0.01px #ff87b3;
+    background-color: #ddb9c6;
+    border: solid 0.01px #e46996;
     font-size: 20px;
     margin-bottom: 20px;
+    
 }
 
 #parte_02 .btn {
