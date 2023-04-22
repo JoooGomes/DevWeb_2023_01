@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  img {
+    width: 10%;
+  }
+  
+  body {
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+  }
+.pai{
+    border: 2px solid #000;
+    height: 400px;
+}
+.imagem_left{
+    float: left;
+}
+.imagem_right{
+    float: right;
+}
