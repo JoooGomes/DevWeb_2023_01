@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 * {
     margin: 0;
     padding: 0;
@@ -5,10 +7,9 @@
 }
 
 body {
-    
     font-size: 1.3rem;
     font-family: 'Oswald', sans-serif;
-    background: #716565;
+    background: #746d6dc2;
 }
 
 a {
@@ -17,57 +18,78 @@ a {
 }
 
 .main-header {
-    background-image: url(https://www.gamewallpapers.com/img_script/wallpaper_dir/img.php?src=wallpaper_diablo_4_02_2560x1080.jpg&height=506&sharpen);
+    background-image: url(https://images7.alphacoders.com/104/1049764.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 1500px;
     height: 55vh;
     padding: 2rem;
-    display: flex;
+    display: block;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white;
 }
 
 .main-header h1 {
     font-size: 4rem;
     margin-bottom: 2rem;
     line-height: 1.2rem;
+    color: white;
 }
 
 .main-header h1 span {
-    color: #f5090967;
+    color: #ff000473;
 }
 
 .main-header p {
     font-size: 2rem;
+    color: rgba(255, 0, 0, 0.521);
 }
 
 .container {
-    background-image: url(https://www.gamewallpapers.com/img_script/wallpaper_dir/img.php?src=wallpaper_diablo_4_17_2560x1080.jpg&height=506&sharpen);
-    max-width: 1200px;
+    background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/9710.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1500px;
     margin: auto;
     overflow: auto;
     padding: 0 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 img {
-    width: 100%;
+    margin-top: 50px;
+    width: 350px;
+    height: 150px;
+}
+
+iframe{
+    margin-top: 25px;
+    width: 710px;
+    height: 200px;        
 }
 
 .card {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
-    background: #f1f1f1;
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 14rem;
+    background: #000000;
     margin-bottom: 2rem;
+    color: white;
+}
+
+.card:nth-child(even) img {
+    order: 2;
 }
 
 .btn {
     display: inline-block;
-    background: #000;
-    color: #fff;
+    background: #ffffff;
+    color: #050000d0;
     padding: 0.8rem 1.8rem;
     margin-top: 2rem;
     cursor: pointer;
@@ -76,8 +98,11 @@ img {
 .btn:hover {
     opacity: 0.8;
 }
-.footer{
-    background-color: #000;
-    color: white;
 
+footer{
+    display: block;
+    margin: 0px 202px ;
+    padding: 100px;
+    background-color: #000000;
+    color: white;
 }
