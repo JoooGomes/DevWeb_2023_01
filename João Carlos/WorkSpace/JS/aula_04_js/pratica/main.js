@@ -39,9 +39,9 @@ if(imparPar2 % 2 == 1){
 
 
 
-if(4 > 7){
+if(6 > 7){
     console.log("aprovado")
-}else if(4 < 6.9 && 4>5){
+}else if(6 < 6.9 && 6 > 5){
     console.log("aprovado por conselho")
 }else{
     console.log("reprovado")
