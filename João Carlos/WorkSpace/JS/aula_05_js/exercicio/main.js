@@ -11,3 +11,6 @@ while (cont >= 0) {
     console.log(`Valor = ${cont}`);
     cont--;
 }
+// For - Decremento
+console.clear();
+for (let i = 0; i > 100; i++) console.log(`Laço For número: ${i}`);
