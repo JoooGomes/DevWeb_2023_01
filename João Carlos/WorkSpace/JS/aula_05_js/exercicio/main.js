@@ -13,4 +13,6 @@ while (cont >= 0) {
 }
 // For - Decremento
 console.clear();
-for (let i = 0; i > 100; i++) console.log(`Laço For número: ${i}`);
+for (let i = 1; i < 101; i++) {
+    if (i % 3 ) console.log(`Laço For número: ${i}`);
+}
