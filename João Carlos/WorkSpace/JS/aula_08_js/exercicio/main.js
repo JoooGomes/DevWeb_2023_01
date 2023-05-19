@@ -1,8 +1,8 @@
 alert("bem vindo");
 
-    let a = prompt("valor do = A")
-    let b = prompt("valor do = B")
-    let c = prompt("valor do = C em negativo")
+    let a = prompt("coloque um valor ")
+    let b = prompt("coloque outro valor")
+    let c = prompt("coloque um valor em negativo")
 
 
 const delta = b * b - 4 * a * c;
