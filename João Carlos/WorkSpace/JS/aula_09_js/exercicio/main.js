@@ -4,9 +4,9 @@ num1.forEach(ParImpar);
 
 function ParImpar(valor) {
   if (valor % 2 === 0){
-  console.log( valor + 'o valor é par')
+  console.log( valor + ' o valor é par')
   } else {
-  console.log( valor + 'o valor é impar')
+  console.log( valor + ' o valor é impar')
   }
   
 }
