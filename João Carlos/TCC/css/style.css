@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.3rem;
+    font-family: 'Oswald', sans-serif;
+    background: #ffffffc2;
+}
+
+a {
+    color: #911818;
+    text-decoration: none;
+}
+
+.main-header {
+    background-image: url('../img/Capturar.PNG');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1435px;
+    height: 55vh;
+    padding: 2rem;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.main-header h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    line-height: 1.2rem;
+    color: white;
+}
+
+.main-header h1 span {
+    color: #ff0004;
+}
+
+.main-header p {
+    font-size: 2rem;
+    color: rgb(255, 0, 0);
+}
+
+.container {
+    background-image: url('');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1500px;
+    margin: auto;
+    overflow: auto;
+    padding: 0 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    margin-top: 100px;
+    width: 250px;
+    height: 250px;
+}
+
+iframe{
+    margin-top: 25px;
+    width: 710px;
+    height: 200px;        
+}
+
+.card {
+    padding: 50px 50px;
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    background: #bba4a4;
+    margin-bottom: 2rem;
+    color: rgb(161, 253, 253);
+}
+
+.card:nth-child(even) img {
+    order: 1;
+}
+
+.btn {
+    display: inline-block;
+    background: #ffffff;
+    color: #ff006aaf;
+    padding: 0.8rem 1.8rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+@media screen and (min-width: 480px) {
+    #leftsidebar {width: 200px; float: left;}
+    #main {margin-left: 216px;}
