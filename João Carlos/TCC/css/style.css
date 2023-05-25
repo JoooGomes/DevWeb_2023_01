@@ -7,7 +7,7 @@
 }
 
 body {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-family: 'Oswald', sans-serif;
     background: #ffffffc2;
 }
@@ -21,7 +21,7 @@ a {
     background-image: url('../img/Capturar.PNG');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 1435px;
+    background-size:  1436px;
     height: 55vh;
     padding: 2rem;
     display: block;
@@ -39,12 +39,12 @@ a {
 }
 
 .main-header h1 span {
-    color: #ff0004;
+    color: #ffffff;
 }
 
 .main-header p {
     font-size: 2rem;
-    color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .container {
@@ -62,9 +62,9 @@ a {
 }
 
 img {
-    margin-top: 100px;
-    width: 250px;
-    height: 250px;
+    margin-top: 50px;
+    width: 350px;
+    height: 350px;
 }
 
 iframe{
@@ -78,29 +78,16 @@ iframe{
     display: flex;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
-    background: #bba4a4;
+    background: #b693a5;
     margin-bottom: 2rem;
-    color: rgb(161, 253, 253);
+    color: rgb(210, 248, 248);
 }
 
 .card:nth-child(even) img {
     order: 1;
 }
 
-.btn {
-    display: inline-block;
-    background: #ffffff;
-    color: #ff006aaf;
-    padding: 0.8rem 1.8rem;
-    margin-top: 2rem;
-    cursor: pointer;
-}
-
-.btn:hover {
-    opacity: 0.8;
-}
-
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 780px) {
     #leftsidebar {width: 200px; float: left;}
     #main {margin-left: 216px;}
 }
