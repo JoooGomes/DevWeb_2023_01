@@ -61,7 +61,7 @@ a {
     margin-right: auto;
 }
 
-img {
+.imgem {
     margin-top: 50px;
     width: 350px;
     height: 350px;
@@ -73,7 +73,7 @@ iframe{
     height: 200px;        
 }
 
-.card {
+.card1 {
     padding: 50px 50px;
     display: flex;
     grid-template-columns: repeat(3, 1fr);
@@ -83,7 +83,7 @@ iframe{
     color: rgb(210, 248, 248);
 }
 
-.card:nth-child(even) img {
+.card1:nth-child(even) img {
     order: 1;
 }
 
