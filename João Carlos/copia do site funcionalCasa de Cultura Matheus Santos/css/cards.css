@@ -1,0 +1,38 @@
+@import url("./media.css");
+
+.cardSite {
+    background-image: url('');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1500px;
+    margin: auto;
+    overflow: auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.imgem {
+    width: 60%;
+    height: 60%;
+}
+
+iframe{
+    margin-top: 25px;
+    width: 710px;
+    height: 200px;        
+}
+
+.card1 {
+    margin-top: 5px;
+    padding: 2rem;
+    display: flex;
+    background: #b693a5;
+    color: rgb(210, 248, 248);
+}
+
+.card1 h3 {
+    font-size: 1.25rem;
+}
