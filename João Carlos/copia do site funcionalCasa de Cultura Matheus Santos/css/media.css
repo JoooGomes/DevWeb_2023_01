@@ -194,7 +194,10 @@
     margin-bottom: 0;
     font-size: 14px;
   }
-
+  .text-div {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 1440px) {
