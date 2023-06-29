@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
 @import url("./banner.css");
 @import url("./carousel.css");
-@import url("./cards.css");
 
 
 * {
@@ -38,20 +37,29 @@ body {
 }
 
 header {
-  background-image: url(../assets/logocasadecultura.png);
-  background-position: initial;
-  background-repeat: no-repeat;
-  height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+header img{
+  width: 21rem;
+  height: 21rem;
+}
+
+nav {
+  width: 100%;
+  display: flex;
 }
 
 .menu {
-  background: white;
+  background: var(--color-day);
   font-family: var(--fonte-secundaria);
   font-size: 16px;
-  height: 258px;
-  padding: 0 1.5rem;
+  width: 100%;
+  height: 21rem;
   white-space: nowrap;
-  margin-left: 450px;
 }
 
 .menu__titulo {
@@ -86,7 +94,12 @@ li {
   background-color: var(--body-color);
   width: 100%;
 }
+
+.card-body {
+  display: grid;
+}
 button {
+  width: 75px;
   cursor: pointer;
   box-shadow: 0px 0px 2px gray;
   border: none;
@@ -94,10 +107,6 @@ button {
   padding: 5px;
   border-radius: 5px;
   color: white;
-}
-
-.botao-admin {
-  display: none;
 }
 
 #header {
@@ -172,6 +181,22 @@ button {
   background-color: var(--body-color) !important;
   box-shadow: none !important;
 }
+
+
+dialog {
+  height: 10rem;
+  justify-content: center;
+  align-items: center;
+  left:calc(15% - 150px);
+  top: 250px;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.8);
+  height: 315vh;
+}
+
+
 #newEventModal,
 #deleteEventModal {
   display: none;
@@ -185,6 +210,15 @@ button {
   position: absolute;
   font-family: sans-serif;
 }
+
+.modalCalendarUsuario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 3em;
+}
+
 #eventTitleInput,
 #eventTextInput,
 #eventText,
@@ -239,13 +273,19 @@ button {
   left: 0px;
   z-index: 10;
   width: 100vw;
-  height: 120vh;
-  position: absolute;
+  height: 100vh;
+  position: fixed;
   background-color: rgba(0, 0, 0, 0.8);
 }
 
 #eventText img {
   width: 80%;
+}
+
+.newsLetter {
+  height: 9.5rem;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .rodape {

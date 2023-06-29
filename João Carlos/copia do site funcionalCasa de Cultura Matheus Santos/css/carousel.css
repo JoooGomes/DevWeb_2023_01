@@ -9,28 +9,36 @@
 .cards-wrapper {
   display: flex;
   justify-content: center;
-  height: 28rem;
+  height: 40rem;
 }
+
 .card img {
   align-self: center;
   width: 55%;
   height: 50%;
   padding-top: .5em;
 }
+
 .card {
   
-  margin: 0.5em 10.5em;
+  margin: 0.5em 4.5em;
   box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
   border: none;
   border-radius: 0;
 }
 
-.card p{
+.card p {
   font-size: 1rem;
 }
+
+.card a {
+  align-self: center;
+}
+
 .carousel-inner {
   overflow: visible;
 }
+
 .carousel-control-prev,
 .carousel-control-next {
   background-color: #272727;
@@ -57,6 +65,10 @@
     margin: 0.2em;
   }
 
+  .card-title {
+    font-size: 1em;
+  }
+
   .card p{
     font-size: 12px;
   }
@@ -69,6 +81,5 @@
 
   .card a{
     font-size: 12px;
-    padding: .3em;
   }
 }

@@ -5,8 +5,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    max-width: 1500px;
-    margin: auto;
     overflow: auto;
     padding: 0 2rem;
     display: flex;
@@ -15,8 +13,9 @@
 }
 
 .imgem {
-    width: 60%;
     height: 60%;
+    width: 30%;
+    padding: inherit;
 }
 
 iframe{
@@ -33,6 +32,53 @@ iframe{
     color: rgb(62, 5, 136);
 }
 
-.card1 h3 {
-    font-size: 1.25rem;
+.card2 {
+    margin-top: 5px;
+    padding: 2rem;
+    display: flex;
+    background: #e2e8e9;
+    color: rgb(62, 5, 136);
+}
+
+.card2 img {
+    flex-direction: row-reverse;
+    order: 2;
+}
+
+
+.text-div {
+    padding: inherit;
+}
+
+.text-div h3{
+    padding: inherit;
+    text-align: center;
+}
+
+.text-div p{
+    padding: inherit;
+    font-size: 18px;
+}
+
+@media (max-width: 780px) {
+    .card1 {
+        padding: 0.2rem;
+    }
+
+    .text-div p{
+        padding: 0;
+        text-align: justify;
+        font-size: 14px;
+    }
+
+    .card2 {
+        padding: 0.2rem;
+    }
+
+    .text-div p{
+        padding: 0;
+        text-align: justify;
+    }
+
+    
 }
