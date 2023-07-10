@@ -1,8 +1,10 @@
 import Header from './Components/Header';
 import Tasks from './Components/Tasks';
+import AddTask from './Components/AddTask';
 import { useState } from 'react';
 
 function App() {
+  const [showAddTask, setShowAddTask] = useState(false);
   const [tasks, setTasks] = useState([
     {
       id: 1,
@@ -23,11 +25,19 @@ function App() {
       reminder: false,
     },
   ]);
-  // Deletar tarefa 
+
+  // Adicionar tarefa
+  const addTask = (task) => {
+    const id = Math.floor(Math.random() * 100000) + 1;
+    const newTask = { id, ...task };
+    setTasks([...tasks, newTask]);
+  };
+
+  // Deletar tarefa
   const deletaTarefa = (id) => {
     setTasks(tasks.filter((task) => task.id !== id));
   };
-  // Alterar o reminder 
+  // Alterar o reminder
   const mudarReminder = (id) => {
     setTasks(
       tasks.map((task) =>
@@ -39,12 +49,10 @@ function App() {
 
   return (
     <div className="container">
-      <Header title="tarefas" />
+      <Header title="tarefas" onAdd={() => setShowAddTask(!showAddTask)} />
+      {showAddTask && <AddTask onAdd={addTask} />}
       {tasks.length > 0 ? (
-        <Tasks
-          tasks={tasks}
-          onDelete={deletaTarefa}
-          onToggle={mudarReminder}
+        <Tasks tasks={tasks} onDelete={deletaTarefa} onToggle={mudarReminder}
         />
       ) : (
         'Você não tem tarefas, pode tirar férias!'
